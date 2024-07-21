@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+  background-color: #080808;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  color: white !important;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-size: 26px;
+  color: white !important;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #2B2B2B;
+  color: white;
+  border-radius: 16px;
+  margin: 0 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  margin-top: 23px;
+}
+
+.menu-item {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.menu-item a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+
+.main-casino-content {
+  background-color: #080808;
+  min-height: 100vh;
+  margin: 0 10px;
+}
+
+.action-wrapper {
+  background-color: #2B2B2B;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.gradient-border {
+  text-align: center;
+  border: 6px solid;
+  padding: 20px 20px 52px 20px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgba(107, 95, 14, 0.756827731092437) 0%, rgba(255, 215, 0, 1) 45%, rgba(255, 115, 0, 1) 100%);
+}
+
+.balance-text {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.result-text {
+  color: rgba(255, 215, 0, 1);
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #080808;
+  color: white;
+  border-top: 1px solid white;
+  padding: 15px;
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
+.copyright-text {
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: 23px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .menu-item {
+    padding: 10px 20px;
+  }
+
+  .menu-open .menu {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .burger-menu div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu-open .burger-menu div:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .menu-open .burger-menu div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .burger-menu div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+  .copyright-text {
+    font-size: 13px;
+  }
+}

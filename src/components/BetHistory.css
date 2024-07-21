@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+}
+
+.bet-history-container {
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.bet-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bet-history-table th,
+.bet-history-table td {
+    border: 1px solid #b88b14;
+    padding: 8px;
+    text-align: center;
+}
+
+.bet-history-table td {
+    font-size: 18px;
+    color: #7a7777;
+}
+
+.bet-history-table th {
+    background-color: #b88b14;
+    color: #333;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.bet-history-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bet-history-table tr:hover {
+    background-color: #b88b14;
+}
+
+.bet-history-table th, .bet-history-table td {
+    padding: 12px 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .bet-history-container {
+        overflow-x: auto;
+    }
+
+    .bet-history-table {
+        width: 900px;
+    }
+}

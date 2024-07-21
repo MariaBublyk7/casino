@@ -1,0 +1,32 @@
+.balance-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+  
+.balance-control {
+  text-align: center;
+  margin-top: 20px;
+}
+  
+.balance-control input {
+  border: 3px solid rgba(255, 215, 0, 1);
+  padding: 9px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+  
+.balance-control button {
+  border-radius: 24px;
+  padding: 9px 25px;
+  background: #2b2b2b;
+  border: 1px solid rgba(255, 215, 0, 1);
+  color: rgba(255, 215, 0, 1);
+}
+
+@media screen and (max-width: 992px) {
+  .balance-control input {
+    margin-bottom: 20px;
+  }
+}

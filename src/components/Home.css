@@ -1,0 +1,37 @@
+.wellcome-text{
+    font-size: 38px;
+    color: white ;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.sub-title {
+    font-size: 24px;
+    color: white;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+
+.casino-img{
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.gold-text{
+    color: rgba(255,215,0,1);
+}
+
+@media screen and (max-width: 992px) {
+    .casino-img{
+       width: 100%;
+    }
+    
+    .wellcome-text{
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+}
